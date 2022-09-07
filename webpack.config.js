@@ -1,8 +1,10 @@
+/* eslint-disable */
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ProvidePlugin } = require("webpack");
 
 module.exports = {
   mode: "development",
+  entry: "./src/index.tsx",
   devServer: {
     port: 8001,
   },
@@ -20,12 +22,15 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: [
-              "@babel/preset-react",
-              "@babel/preset-typescript",
-              "@babel/preset-env",
-            ],
+            presets: ["@babel/preset-react", "@babel/preset-env"],
           },
+        },
+      },
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "ts-loader",
         },
       },
       {
@@ -33,5 +38,8 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
     ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
 };
