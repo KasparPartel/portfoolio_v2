@@ -1,5 +1,13 @@
+import NavBar from "./components/ui/NavBar";
+
+import styles from "./app.module.css";
+
 const App = () => {
-  return <h1>Hello from Kaspar</h1>;
+  return (
+    <div className={styles.container}>
+      <NavBar />
+    </div>
+  );
 };
 
 export default App;
