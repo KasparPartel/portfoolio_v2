@@ -8,13 +8,16 @@ const Landing = () => {
         className={landingStyles.profile__img}
         style={{ backgroundImage: `url(${ProfilePhoto})` }}
       ></div>
-      <div className="text">
+      <div className={landingStyles.text}>
         <h1>
-          Software <span>Developer</span>
+          Software <br />
         </h1>
-        <p>
-          Passionate about building software that looks good and works well.
-        </p>
+        <div className={landingStyles.content}>
+          <h1>Developer</h1>
+          <p>
+            Passionate about building software that looks good and works well.
+          </p>
+        </div>
       </div>
     </section>
   );

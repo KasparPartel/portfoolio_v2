@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
 }
 
@@ -26,6 +26,28 @@
   border: 1px solid black;
 }
 
-/* .wrapper > img {
-  width: 100%;
-} */
+.text h1 {
+  font-size: min(15vw, 4em);
+  line-height: 1em;
+}
+
+.content {
+  margin-left: 4ch;
+  width: min-content;
+}
+
+.content > h1 {
+  position: relative;
+}
+
+.content > h1::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: 0.1em;
+  border: 0.15em solid #c2c2c2;
+  width: 90%;
+
+  z-index: -1;
+}
