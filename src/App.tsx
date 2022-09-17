@@ -1,12 +1,18 @@
-import NavBar from "./components/ui/NavBar";
+import { BrowserRouter } from "react-router-dom";
+
+import { NavBar } from "./components";
+import { Landing } from "./pages";
 
 import styles from "./app.module.css";
 
 const App = () => {
   return (
-    <div className={styles.container}>
-      <NavBar />
-    </div>
+    <BrowserRouter>
+      <div className={styles.container}>
+        <NavBar />
+        <Landing />
+      </div>
+    </BrowserRouter>
   );
 };
 

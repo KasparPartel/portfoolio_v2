@@ -1,4 +1,6 @@
 .container {
-  width: min(93%, 1000px);
+  position: relative;
+  width: min(90%, 1000px);
+  height: 200vh;
   margin-inline: auto;
 }

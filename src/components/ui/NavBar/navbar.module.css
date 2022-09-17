@@ -1,0 +1,38 @@
+nav {
+  width: 100%;
+  padding: 1em 0;
+
+  position: sticky;
+  top: 0;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__open {
+  z-index: -1;
+  font-size: 1.3rem;
+
+  height: 100vh;
+  width: min(40vw, 300px);
+  padding-inline: 1em;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.7em;
+
+  background-color: rgba(222, 222, 222, 1);
+}
+
+.nav__open > a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
