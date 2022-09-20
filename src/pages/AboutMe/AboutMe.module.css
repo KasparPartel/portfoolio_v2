@@ -1,0 +1,7 @@
+.section {
+  padding-top: 6.2em;
+}
+
+.section > h2 {
+  margin-bottom: 3rem;
+}

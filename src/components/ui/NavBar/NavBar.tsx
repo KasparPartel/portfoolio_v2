@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { HiMenuAlt4, HiOutlineX } from "react-icons/hi";
 
-import navStyles from "./navbar.module.css";
+import navStyles from "./Navbar.module.css";
 
 import { IconContext } from "react-icons";
 import SwitchIcon from "../../../assets/images/switch-off-outline.svg";
@@ -39,11 +38,11 @@ const TopNav = ({ isNavOpen, setIsNavOpen }: TopNavProps) => {
 const SideNav = () => {
   return (
     <div className={navStyles.nav__open}>
-      <Link to="/#home">Home</Link>
-      <Link to="/#about-me">About Me</Link>
-      <Link to="/#skills">Skills</Link>
-      <Link to="/#projects">Projects</Link>
-      <Link to="/#contact-me">Contact Me</Link>
+      <a href="#home">Home</a>
+      <a href="#about-me">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact-me">Contact Me</a>
     </div>
   );
 };
@@ -52,9 +51,9 @@ const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className={navStyles.nav}>
       <TopNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      {isNavOpen ? <SideNav /> : null}
+      {isNavOpen && <SideNav />}
     </nav>
   );
 };

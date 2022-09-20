@@ -2,7 +2,7 @@
   --font-Bodoni: "Bodoni MT", "Bodoni 72", Didot, "Didot LT STD", "Hoefler Text",
     Garamond, "Times New Roman", serif;
 
-  font-size: calc(15px + 0.390625vw);
+  font-size: calc(16px + 0.390625vw);
 }
 
 *,
@@ -15,4 +15,8 @@
 
 body {
   background-color: #fdfdfd;
+}
+
+h2 {
+  font-size: 1.8em;
 }

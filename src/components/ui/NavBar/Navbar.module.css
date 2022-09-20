@@ -1,10 +1,10 @@
-nav {
-  width: 100%;
+.nav {
+  width: min(90%, 1000px);
   padding: 1em 0;
 
   z-index: 10000;
 
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 

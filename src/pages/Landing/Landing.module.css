@@ -1,6 +1,7 @@
-.wrapper {
+.section {
   display: grid;
-  align-items: center;
+  height: 100vh;
+  align-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
 }
@@ -34,6 +35,10 @@
 .content {
   margin-left: 4ch;
   width: min-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .content > h1 {
@@ -50,4 +55,9 @@
   width: 90%;
 
   z-index: -1;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
 }
