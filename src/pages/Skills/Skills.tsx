@@ -1,7 +1,5 @@
 import skillsStyles from "./Skills.module.css";
 
-// import
-
 interface SkillsGridItemProps {
   text: string;
   image?: string;
