@@ -1,0 +1,25 @@
+.section {
+  padding-top: 6.2em;
+}
+
+.section > h2 {
+  margin-bottom: 3em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form > input,
+.form > textarea {
+  font-size: 1em;
+  padding: 0.7em 0.5em;
+}
+
+.form > button {
+  width: 100%;
+  font-size: 1em;
+  padding: 0.7em 0.5em;
+}

@@ -1,4 +1,4 @@
-import skillsStyles from "./Skills.module.css";
+import styles from "./Skills.module.css";
 
 interface SkillsGridItemProps {
   text: string;
@@ -7,7 +7,7 @@ interface SkillsGridItemProps {
 
 const SkillsGridItem = ({ text }: SkillsGridItemProps) => {
   return (
-    <div className={skillsStyles.grid_item}>
+    <div className={styles.grid_item}>
       <img src="https://via.placeholder.com/66" alt="placholder" />
       <p>{text}</p>
     </div>
@@ -16,7 +16,7 @@ const SkillsGridItem = ({ text }: SkillsGridItemProps) => {
 
 const SkillsGrid = () => {
   return (
-    <div className={skillsStyles.skills_grid}>
+    <div className={styles.skills_grid}>
       <SkillsGridItem text="Javascript" />
       <SkillsGridItem text="React" />
       <SkillsGridItem text="Golang" />
@@ -32,7 +32,7 @@ const SkillsGrid = () => {
 
 const Skills = () => {
   return (
-    <section id="skills" className={skillsStyles.section}>
+    <section id="skills" className={styles.section}>
       <h2>My Skills</h2>
       <SkillsGrid />
     </section>

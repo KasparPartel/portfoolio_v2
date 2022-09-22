@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HiMenuAlt4, HiOutlineX } from "react-icons/hi";
 
-import navStyles from "./Navbar.module.css";
+import styles from "./Navbar.module.css";
 
 import { IconContext } from "react-icons";
 import SwitchIcon from "../../../assets/images/switch-off-outline.svg";
@@ -13,16 +13,12 @@ interface TopNavProps {
 
 const TopNav = ({ isNavOpen, setIsNavOpen }: TopNavProps) => {
   return (
-    <div className={navStyles.items}>
-      <img
-        className={navStyles.icon}
-        src={SwitchIcon}
-        alt="Theme switch icon"
-      />
+    <div className={styles.items}>
+      <img className={styles.icon} src={SwitchIcon} alt="Theme switch icon" />
       <IconContext.Provider
         value={{
           size: "1.7em",
-          className: navStyles.icon,
+          className: styles.icon,
         }}
       >
         {isNavOpen ? (
@@ -37,7 +33,7 @@ const TopNav = ({ isNavOpen, setIsNavOpen }: TopNavProps) => {
 
 const SideNav = () => {
   return (
-    <div className={navStyles.nav__open}>
+    <div className={styles.nav__open}>
       <a href="#home">Home</a>
       <a href="#about-me">About Me</a>
       <a href="#skills">Skills</a>
@@ -51,7 +47,7 @@ const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <nav className={navStyles.nav}>
+    <nav className={styles.nav}>
       <TopNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       {isNavOpen && <SideNav />}
     </nav>

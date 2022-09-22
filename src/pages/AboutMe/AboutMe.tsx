@@ -1,8 +1,8 @@
-import aboutMeStyles from "./AboutMe.module.css";
+import styles from "./AboutMe.module.css";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className={aboutMeStyles.section}>
+    <section id="about-me" className={styles.section}>
       <h2>About Me</h2>
       <p>
         My name is Kaspar Johannes Pärtel. I am a junior software engineer from

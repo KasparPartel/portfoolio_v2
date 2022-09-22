@@ -1,4 +1,4 @@
-import workStyles from "./Work.module.css";
+import styles from "./Work.module.css";
 
 import workData from "./data";
 import { Button } from "../../components";
@@ -21,10 +21,10 @@ const WorkCard = ({
   live_link,
 }: WorkCardProps) => {
   return (
-    <div className={workStyles.card}>
+    <div className={styles.card}>
       <img src={image} alt="placeholder" />
 
-      <div className={workStyles.text}>
+      <div className={styles.text}>
         <h3>{header}</h3>
 
         <p>{description}</p>
@@ -36,7 +36,7 @@ const WorkCard = ({
           ))}
         </p>
 
-        <div className={workStyles.buttons}>
+        <div className={styles.buttons}>
           <a href={repo} target="blank">
             <Button size="small" text="Repo" />
           </a>
@@ -53,10 +53,10 @@ const WorkCard = ({
 
 const Work = () => {
   return (
-    <section id="work" className={workStyles.section}>
+    <section id="work" className={styles.section}>
       <h2>My Work</h2>
 
-      <div className={workStyles.cards}>
+      <div className={styles.cards}>
         {workData.map((data, index) => (
           <WorkCard
             key={index}

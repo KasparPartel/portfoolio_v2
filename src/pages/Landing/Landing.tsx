@@ -1,26 +1,26 @@
 import ProfilePhoto from "../../assets/images/portrait.jpg";
-import landingStyles from "./Landing.module.css";
+import styles from "./Landing.module.css";
 
 import { Button } from "../../components";
 
 const Landing = () => {
   return (
-    <section id="home" className={landingStyles.section}>
+    <section id="home" className={styles.section}>
       <div
-        className={landingStyles.profile__img}
+        className={styles.profile__img}
         style={{ backgroundImage: `url(${ProfilePhoto})` }}
       ></div>
-      <div className={landingStyles.text}>
+      <div className={styles.text}>
         <h1>
           Software <br />
         </h1>
-        <div className={landingStyles.content}>
+        <div className={styles.content}>
           <h1>Developer</h1>
           <p>
             Passionate about building software that looks good and works well.
           </p>
 
-          <div className={landingStyles.buttons}>
+          <div className={styles.buttons}>
             <Button
               size="small"
               outline={true}

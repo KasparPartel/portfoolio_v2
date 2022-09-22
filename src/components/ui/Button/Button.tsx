@@ -1,4 +1,4 @@
-import btnStyles from "./Button.module.css";
+import styles from "./Button.module.css";
 
 type Size = "small" | "medium" | "big";
 
@@ -13,7 +13,7 @@ interface ButtonProps {
 const Button = ({ size, outline, text, onClick, children }: ButtonProps) => {
   return (
     <button
-      className={`${btnStyles[size]} ${outline ? btnStyles.outline : ""}`}
+      className={`${styles[size]} ${outline ? styles.outline : ""}`}
       onClick={onClick}
     >
       {text}

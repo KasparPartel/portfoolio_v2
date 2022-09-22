@@ -1,6 +1,5 @@
-.container {
+.container > main {
   position: relative;
   width: min(90%, 1000px);
-  height: 200vh;
   margin-inline: auto;
 }
