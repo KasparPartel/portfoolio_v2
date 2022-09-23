@@ -2,31 +2,20 @@
   display: grid;
   height: 100vh;
   align-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2em;
-
-  /* background: -webkit-linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); 
-  background: linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  );  */
+  align-items: center;
+  justify-items: center;
 }
 
 .profile__img {
   position: relative;
+  justify-self: center;
 
-  width: 98%;
-  height: auto;
-  background-size: cover;
-  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+  width: min(100vw, 500px);
 }
 
-.profile__img::after {
+/* .profile__img::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -37,7 +26,7 @@
   right: -2%;
 
   border: 1px solid black;
-}
+} */
 
 .text h1 {
   font-size: min(15vw, 4em);

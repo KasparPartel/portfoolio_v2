@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { HiMenuAlt4, HiOutlineX } from "react-icons/hi";
+// import { HiMenuAlt4, HiOutlineX } from "react-icons/hi";
+import { Squeeze as Hamburger, Squeeze } from "hamburger-react";
 
 import styles from "./Navbar.module.css";
 
@@ -21,11 +22,16 @@ const TopNav = ({ isNavOpen, setIsNavOpen }: TopNavProps) => {
           className: styles.icon,
         }}
       >
-        {isNavOpen ? (
+        {/* {isNavOpen ? (
           <HiOutlineX onClick={() => setIsNavOpen(!isNavOpen)} />
         ) : (
           <HiMenuAlt4 onClick={() => setIsNavOpen(!isNavOpen)} />
-        )}
+        )} */}
+        <Squeeze
+          size={32}
+          toggled={isNavOpen}
+          toggle={() => setIsNavOpen(!isNavOpen)}
+        />
       </IconContext.Provider>
     </div>
   );
@@ -34,11 +40,23 @@ const TopNav = ({ isNavOpen, setIsNavOpen }: TopNavProps) => {
 const SideNav = () => {
   return (
     <div className={styles.nav__open}>
-      <a href="#home">Home</a>
-      <a href="#about-me">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#work">Work</a>
-      <a href="#contact-me">Contact Me</a>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact-me">Contact Me</a>
+        </li>
+      </ul>
     </div>
   );
 };

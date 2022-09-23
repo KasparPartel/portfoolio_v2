@@ -20,11 +20,14 @@
   align-items: center;
   gap: 0.3em;
 
+  width: 4em;
+  padding: 0.5em;
+
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.12);
 }
 
 .grid_item > img {
-  width: 100%;
+  width: 70%;
 }
 
 .grid_item > p {

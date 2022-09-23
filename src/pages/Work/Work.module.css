@@ -7,24 +7,25 @@
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 3em;
 }
 
 .card {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.5em;
+  align-items: center;
   border: 1px solid black;
 }
 
 .card > img {
-  max-width: 100%;
+  width: min(100%, 400px);
 }
 
 .text {
+  flex: 1 0 200px;
   padding: 1em;
   display: flex;
   flex-direction: column;

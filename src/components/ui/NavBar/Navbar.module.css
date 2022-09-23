@@ -18,7 +18,7 @@
   z-index: 10000;
 }
 
-.nav__open {
+.nav__open > ul {
   z-index: 1000;
   font-size: 1.3rem;
 
@@ -35,10 +35,34 @@
   justify-content: center;
   gap: 1.7em;
 
+  list-style-type: none;
   background-color: rgba(222, 222, 222, 1);
 }
 
-.nav__open > a {
+.nav__open a {
+  display: inline-block;
+  position: relative;
   text-decoration: none;
   color: #1f1f1f;
+}
+
+.nav__open a::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* height: 100%; */
+  /* height: 40%; */
+  background-color: lightsalmon;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav__open a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

@@ -1,4 +1,5 @@
 import ProfilePhoto from "../../assets/images/portrait.jpg";
+import vanGoghPortrait from "../../assets/images/van-gogh-portrait-drawing-5359.svg";
 import styles from "./Landing.module.css";
 
 import { Button } from "../../components";
@@ -6,11 +7,12 @@ import { Button } from "../../components";
 const Landing = () => {
   return (
     <section id="home" className={styles.section}>
-      <img src={ProfilePhoto} alt="profile" className={styles.profile__img} />
-      {/* <div
+      {/* <img src={ProfilePhoto} alt="profile" className={styles.profile__img} /> */}
+      <img
+        src={vanGoghPortrait}
+        alt="Van Gogh portrait drawing"
         className={styles.profile__img}
-        style={{ backgroundImage: `url(${ProfilePhoto})` }}
-      ></div> */}
+      />
       <div className={styles.text}>
         <h1>
           Software <br />

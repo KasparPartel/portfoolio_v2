@@ -1,6 +1,9 @@
 import { Fragment } from "react";
 import styles from "./ContactMe.module.css";
 
+import emailIcon from "../../assets/images/icon_email.svg";
+import phoneIcon from "../../assets/images/icon_phone.svg";
+
 interface ContactCardProps {
   img: string;
   imgAlt: string;
@@ -60,15 +63,11 @@ const ContactMe = () => {
       <h2>Contact Me</h2>
       <div className={styles.cards}>
         <ContactCard
-          img="https://via.placeholder.com/50"
-          imgAlt="Placeholder"
+          img={emailIcon}
+          imgAlt="email icon"
           text="kasparjohannes@gmail.com"
         />
-        <ContactCard
-          img="https://via.placeholder.com/50"
-          imgAlt="Placeholder"
-          text="+37255962987"
-        />
+        <ContactCard img={phoneIcon} imgAlt="phone icon" text="+37255962987" />
       </div>
       <ContactForm />
     </section>
