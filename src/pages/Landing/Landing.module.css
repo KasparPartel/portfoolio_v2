@@ -2,28 +2,28 @@
   display: grid;
   height: 100vh;
   align-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2em;
 
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     to right,
     #2c3e50,
     #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #2c3e50,
     #bdc3c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );  */
 }
 
 .profile__img {
   position: relative;
 
   width: 98%;
-  height: min(40vh, 500px);
+  height: auto;
   background-size: cover;
+  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
 }
 
 .profile__img::after {

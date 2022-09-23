@@ -6,10 +6,11 @@ import { Button } from "../../components";
 const Landing = () => {
   return (
     <section id="home" className={styles.section}>
-      <div
+      <img src={ProfilePhoto} alt="profile" className={styles.profile__img} />
+      {/* <div
         className={styles.profile__img}
         style={{ backgroundImage: `url(${ProfilePhoto})` }}
-      ></div>
+      ></div> */}
       <div className={styles.text}>
         <h1>
           Software <br />
