@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.icon {
+.icon-hamburger {
   z-index: 10000;
 }
 
@@ -62,7 +62,10 @@
   transition: transform 0.25s ease-out;
 }
 
-.nav__open a:hover:after {
+.nav__open a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* .nav__open > .active::before {
+} */
