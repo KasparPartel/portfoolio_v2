@@ -1,5 +1,5 @@
 .container > main {
-  position: relative;
   width: min(90%, 1000px);
   margin-inline: auto;
+  overflow-x: hidden;
 }

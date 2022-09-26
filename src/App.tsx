@@ -4,7 +4,7 @@ import { NavBar } from "./components";
 import { AboutMe, ContactMe, Landing, Skills, Work, Footer } from "./pages";
 
 import styles from "./app.module.css";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 
 const App = () => {
   const loader = document.querySelector(".loader") as HTMLElement;

@@ -25,11 +25,23 @@ const TopNav = ({ isNavOpen, setIsNavOpen }: TopNavProps) => {
   );
 };
 
-const SideNav = () => {
+interface SideNavProps {
+  isNavOpen: boolean;
+}
+
+const SideNav = ({ isNavOpen }: SideNavProps) => {
+  // const getScrollPosition = () => {
+  //   return document
+  // }
+
   return (
-    <div className={styles.nav__open}>
+    <div
+      className={`${styles["side-nav"]} ${
+        isNavOpen && styles["side-nav_open"]
+      }`}
+    >
       <ul>
-        <li>
+        <li id="homeLink">
           <a href="#home">Home</a>
         </li>
         <li>
@@ -55,7 +67,8 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <TopNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      {isNavOpen && <SideNav />}
+      {/* {isNavOpen && <SideNav />} */}
+      <SideNav isNavOpen={isNavOpen} />
     </nav>
   );
 };
