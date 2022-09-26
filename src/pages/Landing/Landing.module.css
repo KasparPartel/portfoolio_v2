@@ -1,15 +1,14 @@
-.section {
+.grid {
   display: grid;
+  place-items: center;
   height: 100vh;
-  align-content: center;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2em;
-  align-items: center;
-  justify-items: center;
 }
 
 .wave {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   transform: rotate(180deg);
@@ -26,16 +25,6 @@
   width: 8em;
   transform: rotate(90deg);
 }
-
-/* .gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
-} */
 
 .profile__img {
   position: relative;

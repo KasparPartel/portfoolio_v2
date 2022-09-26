@@ -22,7 +22,7 @@ const ContactForm = () => {
   return (
     <Fragment>
       <h3>Contact form</h3>
-      <form className={styles.form}>
+      <form action="javascript:void(0);" className={styles.form}>
         <div className={styles.form_grid_1}>
           <input
             type="text"

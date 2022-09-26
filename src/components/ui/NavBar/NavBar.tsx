@@ -13,7 +13,11 @@ interface TopNavProps {
 const TopNav = ({ isNavOpen, setIsNavOpen }: TopNavProps) => {
   return (
     <div className={styles.items}>
-      <img className={styles.icon} src={SwitchIcon} alt="Theme switch icon" />
+      <img
+        className={styles["icon-switch"]}
+        src={SwitchIcon}
+        alt="Theme switch icon"
+      />
       <div className={styles["icon-hamburger"]}>
         <Hamburger
           size={25}
@@ -30,10 +34,6 @@ interface SideNavProps {
 }
 
 const SideNav = ({ isNavOpen }: SideNavProps) => {
-  // const getScrollPosition = () => {
-  //   return document
-  // }
-
   return (
     <div
       className={`${styles["side-nav"]} ${

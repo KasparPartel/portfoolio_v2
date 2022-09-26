@@ -16,6 +16,12 @@
 
 .icon-hamburger {
   z-index: 10000;
+  justify-self: flex-end;
+}
+
+.icon-switch {
+  opacity: 0;
+  justify-self: flex-start;
 }
 
 .side-nav {
@@ -83,8 +89,22 @@
   transform-origin: bottom left;
 }
 
+@media only screen and (min-width: 1400px) {
+  .icon-hamburger {
+    display: none;
+  }
+
+  .side-nav {
+    width: 200px;
+    background-color: transparent;
+    font-size: 1em;
+  }
+
+  .side-nav > ul {
+    padding-inline: 0;
+  }
+}
+
 li.active {
   background-color: red;
 }
-/* .nav__open > .active::before {
-} */
