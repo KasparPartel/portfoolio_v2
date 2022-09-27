@@ -88,3 +88,9 @@
   display: flex;
   gap: 0.5em;
 }
+
+.result-msg {
+  text-align: center;
+  color: green;
+  /* display: block; */
+}

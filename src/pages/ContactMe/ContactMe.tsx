@@ -1,4 +1,5 @@
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import styles from "./ContactMe.module.css";
 
 import emailIcon from "../../assets/images/icon_email.svg";
@@ -20,45 +21,38 @@ const ContactCard = ({ img, imgAlt, text }: ContactCardProps) => {
   );
 };
 
-const ContactForm = () => {
+interface ContactFormProps {
+  setMsg: (s: string) => void;
+}
+
+const ContactForm = ({ setMsg }: ContactFormProps) => {
   const form = useRef();
-  // const [form, setForm] = useState<{
-  //   user_name: string;
-  //   user_email: string;
-  //   subject: string;
-  //   message: string;
-  // }>({ user_name: "", user_email: "", subject: "", message: "" });
-
-  // const handleInputChange = (e: React.FormEvent<HTMLInputElement>) => {
-  //   const name = e.currentTarget.name;
-  //   setForm({ ...form, [name]: e.currentTarget.value });
-  // };
-
-  // const handleTextAreaChange = (e: React.FormEvent<HTMLTextAreaElement>) => {
-  //   const name = e.currentTarget.name;
-  //   setForm({ ...form, [name]: e.currentTarget.value });
-  // };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
+
+    emailjs
+      .sendForm("portfolio", "contact_form", form.current, "oYwwWZJ4rUcwiGbjE")
+      .then(
+        () => {
+          setMsg("Message sent");
+        },
+        () => {
+          setMsg("Something went wrong");
+        }
+      );
   };
 
   return (
     <Fragment>
       <h3>Contact form</h3>
-      <form
-        ref={form}
-        onSubmit={(e) => handleSubmit(e)}
-        className={styles.form}
-      >
+      <form ref={form} onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.form_grid_1}>
           <input
             type="text"
             name="user_name"
             id="form_name"
             placeholder="Your name*"
-            // onChange={handleInputChange}
             required
           />
           <input
@@ -66,7 +60,6 @@ const ContactForm = () => {
             name="user_email"
             id="form_email"
             placeholder="Your email*"
-            // onChange={handleInputChange}
             required
           />
           <input
@@ -74,7 +67,6 @@ const ContactForm = () => {
             name="subject"
             id="form_subject"
             placeholder="Subject*"
-            // onChange={handleInputChange}
             required
           />
         </div>
@@ -84,7 +76,6 @@ const ContactForm = () => {
             id="form_message"
             rows={5}
             placeholder="Your message*"
-            // onChange={handleTextAreaChange}
             required
           ></textarea>
           <button>Send message</button>
@@ -95,6 +86,13 @@ const ContactForm = () => {
 };
 
 const ContactMe = () => {
+  const [msg, setMsg] = useState("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => setMsg(""), 4000);
+    return () => clearTimeout(timer);
+  }, [msg]);
+
   return (
     <section id="contact-me" className={styles.section}>
       <h2>Contact Me</h2>
@@ -106,7 +104,12 @@ const ContactMe = () => {
         />
         <ContactCard img={phoneIcon} imgAlt="phone icon" text="+37255962987" />
       </div>
-      <ContactForm />
+      <ContactForm setMsg={setMsg} />
+      {msg && (
+        <p style={{ textAlign: "center", paddingTop: "1em", fontWeight: 700 }}>
+          {msg}
+        </p>
+      )}
     </section>
   );
 };
