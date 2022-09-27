@@ -1,4 +1,5 @@
 .section {
+  position: relative;
   padding-top: 6.2em;
 }
 
@@ -10,4 +11,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5em;
+}
+
+.circle {
+  position: absolute;
+  left: 35%;
+  top: 8em;
+  width: 20em;
+  opacity: 0.4;
 }

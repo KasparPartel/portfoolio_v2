@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="91.282715mm"
+   height="69.454376mm"
+   viewBox="0 0 91.282715 69.454376"
+   version="1.1"
+   id="svg1501"
+   inkscape:export-filename="line_spiral.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1503"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs1498">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1624"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Kiht 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.355544,-92.113569)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-opacity:0.6"
+       d="m 20.420989,95.297949 c 23.287404,13.255911 46.574497,26.511641 61.382588,28.541641 14.808092,2.03 21.137273,-7.16523 22.510713,-14.09157 1.37344,-6.92635 -2.20912,-11.583674 -7.642811,-14.509623 -5.43369,-2.925949 -12.718225,-4.120135 -18.152089,-1.671927 -5.433865,2.448209 -9.016422,8.53856 -3.104787,20.66007 5.911636,12.12151 21.316637,30.27314 28.899827,39.1103 7.58319,8.83716 7.34435,8.35949 7.10535,7.88149"
+       id="path1622"
+       inkscape:path-effect="#path-effect1624"
+       inkscape:original-d="m 20.420989,95.297949 c 23.287357,13.255991 46.57445,26.511721 69.861278,39.767191 6.329704,-9.19534 12.658893,-18.39057 18.987933,-27.58625 -3.58243,-4.65725 -7.16499,-9.314575 -10.747885,-13.972257 -7.284561,-1.19397 -14.569096,-2.388156 -21.854041,-3.58263 -3.582437,6.090859 -7.164995,12.181207 -10.747888,18.271417 15.405878,18.15261 30.810877,36.30424 46.215924,54.45597 -0.23859,-0.47744 -0.47742,-0.95511 -0.71653,-1.43306" />
+  </g>
+</svg>

@@ -1,9 +1,18 @@
 .section {
-  padding-top: 6.2em;
+  position: relative;
+  padding: 6.2em 0;
 }
 
 .section > h2 {
   margin-bottom: 3em;
+}
+
+.circle {
+  position: absolute;
+  right: 10vw;
+  top: 8em;
+  width: 4em;
+  opacity: 0.6;
 }
 
 .skills_grid {
@@ -26,8 +35,14 @@
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.12);
 }
 
-.grid_item > img {
+.icon {
   width: 70%;
+  transition: filter 0.4s ease-in-out;
+}
+
+.grid_item:hover .icon {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(26%) saturate(766%)
+    hue-rotate(327deg) brightness(100%) contrast(101%);
 }
 
 .grid_item > p {

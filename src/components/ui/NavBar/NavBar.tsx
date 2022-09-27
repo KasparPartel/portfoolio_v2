@@ -67,7 +67,6 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <TopNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      {/* {isNavOpen && <SideNav />} */}
       <SideNav isNavOpen={isNavOpen} />
     </nav>
   );

@@ -1,4 +1,5 @@
 import styles from "./AboutMe.module.css";
+import circleSalmon from "../../assets/images/illustrations/circle_salmon_no-outline.svg";
 
 const AboutMe = () => {
   return (
@@ -11,6 +12,7 @@ const AboutMe = () => {
           I am studying in Kood/Jõhvi school of computer science where my
           interest and knowledge towards the topic has grown tremendously.
         </p>
+        <img src={circleSalmon} alt="circle" className={styles.circle} />
         <p>
           Besides coding my main interests are different sports (muay thai, gym,
           discgolf), reading and DJing.

@@ -4,26 +4,46 @@
   height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2em;
+  row-gap: 5em;
+  align-content: center;
 }
 
-.wave {
-  position: absolute;
+.trim {
   z-index: -1;
   top: 0;
   left: 0;
-  transform: rotate(180deg);
+  position: absolute;
   width: 100vw;
-  /* color: #000b76; */
-  /* filter: brightness(0) saturate(100%) invert(11%) sepia(75%) saturate(4099%)
-    hue-rotate(222deg) brightness(82%) contrast(133%); */
+  overflow: hidden;
+}
+
+.wave {
+  transform: rotate(180deg);
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0) saturate(100%) invert(93%) sepia(26%) saturate(608%)
+    hue-rotate(184deg) brightness(104%) contrast(96%);
 }
 
 .circles {
   position: absolute;
-  right: 20vw;
-  bottom: 0;
+  left: 10vw;
+  bottom: -5em;
+  width: 2.5em;
+  opacity: 0.3;
+}
+
+.line-spiral {
+  position: absolute;
+  left: 10vw;
+  bottom: -3vh;
   width: 8em;
-  transform: rotate(90deg);
+  transform: rotate(230deg);
+}
+
+.programmer_img {
+  width: min(100%, 500px);
 }
 
 .profile__img {
@@ -51,17 +71,18 @@
   position: relative;
 }
 
-.content > h1::after {
+/* .content > h1::after {
   content: "";
   position: absolute;
 
   left: 0;
   bottom: 0.1em;
-  border: 0.15em solid #b9baa3;
+  border: 0.15em solid #ffaf7d;
+  opacity: 0.4;
   width: 90%;
 
   z-index: -1;
-}
+} */
 
 .buttons {
   display: flex;

@@ -19,7 +19,7 @@ interface SkillsGridItemProps {
 const SkillsGridItem = ({ text, img, alt }: SkillsGridItemProps) => {
   return (
     <div className={styles.grid_item}>
-      <img src={img} alt={alt} />
+      <img src={img} alt={alt} className={styles.icon} />
       <p>{text}</p>
     </div>
   );
@@ -49,6 +49,7 @@ const Skills = () => {
   return (
     <section id="skills" className={styles.section}>
       <h2>My Skills</h2>
+
       <SkillsGrid />
     </section>
   );
