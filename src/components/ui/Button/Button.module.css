@@ -1,16 +1,24 @@
-button {
+.button {
   width: fit-content;
   padding: 0.2em 1em;
-  border: none;
+  border: 1px solid black;
   cursor: pointer;
   background-color: black;
-  color: white;
+  color: #fdfdfd;
+  transition: background-color 0.15s ease-in;
+}
+
+.button:hover {
+  background-color: #222222;
 }
 
 .outline {
   background: none;
   color: black;
-  border: 1px solid black;
+}
+
+.outline:hover {
+  background-color: #fdfdfd;
 }
 
 .small {

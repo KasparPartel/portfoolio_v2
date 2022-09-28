@@ -19,6 +19,7 @@
 
 .form input,
 .form textarea {
+  position: relative;
   font-size: 1em;
   padding: 0.7em 0.5em;
 }
@@ -29,10 +30,29 @@
   outline: none;
 }
 
+.form input:valid::after,
+.form textarea:valid::after {
+  content: "\2713";
+  position: absolute;
+  color: green;
+  right: 0;
+  top: 0;
+  font-size: 1em;
+}
+
+.form input:not(:placeholder-shown):invalid,
+.form textarea:not(:placeholder-shown):invalid {
+  border: 2px solid rgb(228, 92, 68);
+}
+
 .form button {
   width: 100%;
   font-size: 1em;
   padding: 0.7em 0.5em;
+  background-color: black;
+  border: none;
+  color: #fdfdfd;
+  cursor: pointer;
   transition: opacity 0.2s ease-in;
 }
 
@@ -60,6 +80,7 @@
   align-items: center;
   border: 1px solid black;
   padding: 0.7em 0.5em;
+  font-size: 1.1em;
 }
 
 .card > p {

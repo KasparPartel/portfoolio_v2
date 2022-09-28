@@ -3,5 +3,8 @@
   margin-top: 2em;
   padding: 1em 0;
   text-align: center;
-  background-color: lightgray;
+  background-color: #181818;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #e7e7e7;
 }

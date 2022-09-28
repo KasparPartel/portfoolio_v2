@@ -1,10 +1,11 @@
+import * as React from "react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+
 import styles from "./ContactMe.module.css";
 
 import emailIcon from "../../assets/images/icon_email.svg";
 import phoneIcon from "../../assets/images/icon_phone.svg";
-import * as React from "react";
 
 interface ContactCardProps {
   img: string;
@@ -27,6 +28,10 @@ interface ContactFormProps {
 
 const ContactForm = ({ setMsg }: ContactFormProps) => {
   const form = useRef();
+
+  // const validateFormData = (form: React.MutableRefObject<undefined>) => {
+  //   const name = form.current;
+  // };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -53,6 +58,7 @@ const ContactForm = ({ setMsg }: ContactFormProps) => {
             name="user_name"
             id="form_name"
             placeholder="Your name*"
+            pattern="[A-Za-z]+"
             required
           />
           <input
@@ -100,16 +106,14 @@ const ContactMe = () => {
         <ContactCard
           img={emailIcon}
           imgAlt="email icon"
-          text="kasparjohannes@gmail.com"
+          text="kasparjohannespartel@gmail.com"
         />
         <ContactCard img={phoneIcon} imgAlt="phone icon" text="+37255962987" />
       </div>
       <ContactForm setMsg={setMsg} />
-      {msg && (
-        <p style={{ textAlign: "center", paddingTop: "1em", fontWeight: 700 }}>
-          {msg}
-        </p>
-      )}
+      <p style={{ textAlign: "center", paddingTop: "1em", fontWeight: 700 }}>
+        {msg}
+      </p>
     </section>
   );
 };

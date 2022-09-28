@@ -13,7 +13,9 @@ interface ButtonProps {
 const Button = ({ size, outline, text, onClick, children }: ButtonProps) => {
   return (
     <button
-      className={`${styles[size]} ${outline ? styles.outline : ""}`}
+      className={`${styles.button} ${styles[size]} ${
+        outline ? styles.outline : ""
+      }`}
       onClick={onClick}
     >
       {text}
