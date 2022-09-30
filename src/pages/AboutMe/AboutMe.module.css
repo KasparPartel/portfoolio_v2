@@ -13,8 +13,14 @@
   gap: 1.5em;
 }
 
+.flex > p a {
+  text-decoration: underline;
+  color: inherit;
+}
+
 .circle {
   position: absolute;
+  z-index: -1;
   left: 35%;
   top: 8em;
   width: 20em;

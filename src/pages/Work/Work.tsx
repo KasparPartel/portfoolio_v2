@@ -29,12 +29,13 @@ const WorkCard = ({
 
         <p>{description}</p>
 
-        <p>
-          Technologies:{" "}
+        <div className={styles.technologies}>
           {technologies.map((el, index) => (
-            <span key={index}>{el} </span>
+            <span key={index} className={styles.tech}>
+              {el}{" "}
+            </span>
           ))}
-        </p>
+        </div>
 
         <div className={styles.buttons}>
           <a href={repo} target="blank">

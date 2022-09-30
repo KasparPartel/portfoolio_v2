@@ -6,6 +6,7 @@ import styles from "./ContactMe.module.css";
 
 import emailIcon from "../../assets/images/icon_email.svg";
 import phoneIcon from "../../assets/images/icon_phone.svg";
+import linkedinIcon from "../../assets/images/illustrations/linkedin_icon.svg";
 
 interface ContactCardProps {
   img: string;
@@ -109,6 +110,16 @@ const ContactMe = () => {
           text="kasparjohannespartel@gmail.com"
         />
         <ContactCard img={phoneIcon} imgAlt="phone icon" text="+37255962987" />
+      </div>
+      <div className={styles["social-links"]}>
+        <a
+          href="https://www.linkedin.com/in/kaspar-johannes-p-b49432140"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={linkedinIcon} alt="Linkedin icon" />
+          LinkedIn
+        </a>
       </div>
       <ContactForm setMsg={setMsg} />
       <p style={{ textAlign: "center", paddingTop: "1em", fontWeight: 700 }}>

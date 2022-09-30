@@ -11,15 +11,8 @@
   width: 150vw;
   height: 100%;
   z-index: -1;
-  /* background-color: rgb(153, 153, 182); */
   background-color: #f3f2f2;
 }
-
-/* .section h2,
-.section h3,
-.section p {
-  color: rgb(228, 228, 228);
-} */
 
 .section > h2 {
   margin-bottom: 3em;
@@ -79,4 +72,15 @@
 .buttons {
   display: flex;
   gap: 0.5em;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+
+.tech {
+  padding: 0.2em 0.3em;
+  background-color: #e9e9e9;
 }

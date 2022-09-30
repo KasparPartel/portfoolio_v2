@@ -13,11 +13,16 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #fdfdfd;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+  max-width: 100vw;
+  width: 100vw;
   color: #04151f;
-  overflow-x: hidden;
 }
 
 h2 {
