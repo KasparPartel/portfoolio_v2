@@ -6,7 +6,8 @@
     "test": "test",
     "start": "webpack serve",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
