@@ -59,7 +59,7 @@ const ContactForm = ({ setMsg }: ContactFormProps) => {
             name="user_name"
             id="form_name"
             placeholder="Your name*"
-            pattern="[A-Za-z]+"
+            pattern="[A-Za-z ]+"
             required
           />
           <input

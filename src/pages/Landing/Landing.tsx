@@ -1,6 +1,6 @@
 import programmerDarkImg from "../../assets/images/illustrations/programmer-people-laptop_dark.png";
 import wavesSvg from "../../assets/images/wave.svg";
-import circlesSkinnyMd from "../../assets/images/illustrations/circles_outline_skinny_md.svg";
+// import circlesSkinnyMd from "../../assets/images/illustrations/circles_outline_skinny_md.svg";
 import cv from "../../assets/images/cv.jpeg";
 
 import styles from "./Landing.module.css";
@@ -44,7 +44,7 @@ const Landing = () => {
             className={styles.programmer_img}
           />
         </div>
-        <img src={circlesSkinnyMd} alt="circles" className={styles.circles} />
+        {/* <img src={circlesSkinnyMd} alt="circles" className={styles.circles} /> */}
       </section>
     </Fragment>
   );

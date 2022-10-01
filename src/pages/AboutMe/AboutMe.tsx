@@ -10,7 +10,7 @@ const AboutMe = () => {
           My name is <b>Kaspar Johannes Pärtel</b>. I am a 23 years old junior
           software engineer from Estonia interested in every part of development
           cycle. As of this moment I am studying in{" "}
-          <a href="www.kood.tech">
+          <a href="https://kood.tech/" target="_blank" rel="noreferrer">
             <b>Kood/Jõhvi</b>
           </a>{" "}
           school of computer science where my interest and knowledge towards the
@@ -28,7 +28,7 @@ const AboutMe = () => {
           When I&apos;m not coding I like to be active - I like to practice
           different sports - muay thai, gym and discgolf and do many fun
           activities with my friends and family. Sometimes I also play
-          videogames.
+          videogames to relax or make music.
         </p>
       </div>
     </section>
