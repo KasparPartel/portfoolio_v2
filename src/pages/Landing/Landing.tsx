@@ -1,7 +1,8 @@
 import programmerDarkImg from "../../assets/images/illustrations/programmer-people-laptop_dark.png";
 import wavesSvg from "../../assets/images/wave.svg";
 // import circlesSkinnyMd from "../../assets/images/illustrations/circles_outline_skinny_md.svg";
-import cv from "../../assets/images/cv.jpeg";
+// import cv from "../../assets/images/cv.jpeg";
+import cv from "../../assets/files/CV_compressed.pdf";
 
 import styles from "./Landing.module.css";
 
